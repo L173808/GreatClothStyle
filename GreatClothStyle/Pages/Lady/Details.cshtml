@@ -1,0 +1,43 @@
+﻿@page
+@model GreatClothStyle.Pages.Lady.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Women</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Women.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Women.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Women.CType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Women.CType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Women.Size)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Women.Size)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Women.price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Women.price)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Women.id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
